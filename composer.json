@@ -3,7 +3,10 @@
     "description": "Advanced translation bundle",
     "type": "symfony-bundle",
     "require": {
-        "jms/i18n-routing-bundle": "dev-master"
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.3.*",
+        "jms/i18n-routing-bundle": "dev-master",
+        "stof/doctrine-extensions-bundle": "~1.1@dev"
     },
     "license": "MIT",
     "authors": [
