@@ -1,0 +1,20 @@
+{
+    "name": "gizlab/translation-bundle",
+    "description": "Advanced translation bundle",
+    "type": "symfony-bundle",
+    "require": {
+        "jms/i18n-routing-bundle": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juri Em",
+            "email": "juriem1974@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Gizlab\\Bundle\\TranslationBundle": "" }
+    },
+    "target-dir": "Gizlab/Bundle/TranslationBundle",
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,12 @@
+{#
+    Base template for rendering languages
+#}
+
+
+{% if links|length > 0 %}
+    <ul>
+        {% for link in links %}
+        <li class="{{ link.is_active ? ' active' : '' }}"><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}

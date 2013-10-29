@@ -1,0 +1,26 @@
+parameters:
+#    gizlab_translation.example.class: Gizlab\Bundle\TranslationBundle\Example
+
+
+      gizlab_translation.templates.languages: ~
+
+services:
+    #
+    # Расширение для TranslationExtension
+    #
+    gizlab.extension.twig.translation:
+      class: Gizlab\Bundle\TranslationBundle\Extension\Twig\TranslationExtension
+      parent: twig.extension.trans
+      tags:
+        - { name: twig.extension }
+
+    #
+    # Languages rendering
+    #
+    gizlab.extension.twig.languages:
+      class: Gizlab\Bundle\TranslationBundle\Extension\Twig\LanguageExtension
+      arguments: [@service_container, %gizlab_translation.templates.languages%]
+      tags:
+        - { name: twig.extension }
+
+
